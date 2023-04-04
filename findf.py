@@ -116,7 +116,7 @@ def Scan(directory):
         for dir in sub_directories:
             Scan(dir)
     except PermissionError:
-        if verbose:print(f"directory: {entry.name} in {directory_name}\\ Permission Denied-")
+        if verbose:print(f"directory {directory_name}\\ Permission Denied-")
     except KeyboardInterrupt:
         print("Keyboard Interrupt")
         Output()
